@@ -111,7 +111,6 @@ anims/Walk = SubResource( 3 )
 texture = ExtResource( 1 )
 hframes = 6
 vframes = 5
-frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 8 )
@@ -127,4 +126,4 @@ anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 6 )
 parameters/Idle/blend_position = Vector2( -0.996544, -0.00255752 )
-parameters/Walk/blend_position = Vector2( 0, 0 )
+parameters/Walk/blend_position = Vector2( -0.998348, -0.0172414 )
