@@ -23,6 +23,10 @@ window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
+[global]
+
+MOUSE_MODE_CAPTURED=false
+
 [importer_defaults]
 
 texture={

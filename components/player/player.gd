@@ -3,7 +3,6 @@ extends KinematicBody2D
 onready var animation = $AnimationPlayer
 onready var animation_tree = $AnimationTree
 onready var sprite = $Sprite
-onready var raycast2D = $RayCast2D
 var velocity: Vector2 = Vector2()
 var direction: Vector2 = Vector2()
 var mouse_direction: Vector2 = Vector2()
@@ -22,10 +21,8 @@ func handle_player_facing():
 	mouse_direction = Vector2(mouse_pos_from_center_x, mouse_pos_from_center_y)
 	if mouse_direction[0] > 0:
 		sprite.flip_h = false
-		raycast2D.scale.x = -.5
 	else:
 		sprite.flip_h = true
-		raycast2D.scale.x = .5
 	animation_tree.set('parameters/Idle/blend_position', mouse_direction)
 	animation_tree.set('parameters/Walk/blend_position', mouse_direction)	
 
