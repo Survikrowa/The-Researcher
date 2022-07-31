@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/world/tilesets/new_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://components/player/player.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -327684, 3, 0, -327682, 2, 0, -196612, 0, 0, -196610, 0, 0, -262144, 0, 0, -262142, 2, 0, -65540, 0, 0, -65538, 0, 0, -131072, 0, 0, -131070, 0, 0, -131068, 2, 0, 65532, 0, 0, 65534, 0, 0, 0, 0, 0, 2, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
